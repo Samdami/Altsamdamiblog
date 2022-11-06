@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Samdami Blog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+		<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.js') }}" defer> -->
+	</head>
+	</head>
+	<body class="is-preload">
+       
+              
+        </header>
+		<main class="container">
+            {% block content %}
+            {% endblock content %}
+          </main>
+          
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Samdami Blog</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="{{url_for('index')}}">HOME</a></li>
+								<li><a href="{{url_for('protected')}}">PROTECTED</a></li>
+								<li><a href="{{url_for('register')}}">SIGN UP</a></li>
+								<li><a href="{{url_for('login')}}">LOG IN</a></li>
+								<li><a href="{{url_for('logout')}}">LOG OUT</a></li>
+								<li><a href="{{url_for('about')}}">ABOUT</a></li>
+								<li><a href="{{url_for('contact')}}">CONTACT</a></li>
+								<li><a href="{{url_for('add')}}">ADD POST</a></li>
+							</ul>
+					</header>
+
+                <h3>THE POST WAS DELETED SUCCESFULLY!</h3>
+
+                <!-- Footer -->
+                    <section id="footer">
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+                            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                        <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+                    </section>
+
+					</section>
+
+			</div>
+			<script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+			<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/min.js')}}"></script>
+			<script src="{{ url_for('static', filename='js/breakpoints.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='js/util.js')}}"></script>
+	</body>
+</html>
